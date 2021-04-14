@@ -1,0 +1,24 @@
+body {
+    /* background: rgb(235, 39, 88); */
+    background: linear-gradient(228deg, rgb(55, 235, 39) 48%, rgb(79, 12, 156) 100%);
+    text-align: center ;
+}
+
+h1 {
+   font-size: 65px; 
+   font-family : "Red Hat Display" , Arial, Helvetica ;
+   color : rgb(241, 241, 115);
+   box-shadow: 0 5px 5px rgb(217, 255, 0);
+
+
+}
+
+.inspiration {
+    font-family : "Red Hat Display" , Arial, Helvetica ;
+    font-size : 46px;
+    color : beige; 
+    font-weight : 500;
+    padding-top : 50px;
+    padding-left : 90px;
+    padding-right: 90px;
+}

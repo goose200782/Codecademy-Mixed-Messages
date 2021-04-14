@@ -1,9 +1,9 @@
 const randomNum = num => {
     return Math.floor(Math.random() * num)
 }
-
+ 
 const inspiration = {
-    spiritAnimal: ['Dragon', 'Tiger', 'Horse', 'Dog', 'Rabbit', 'Monkey', 'Snake', 'Rat', 'Rooster', 'Pig', 'Goat'],
+    spiritAnimal: ['Dragon 🐉', 'Tiger 🐅 ', 'Horse 🐎', 'Dog 🐕', 'Rabbit 🐇', 'Monkey 🐒', 'Snake 🐍', 'Rat 🐀', 'Rooster 🐓', 'Pig 🐖', 'Goat 🐐'], 
     mood: ['Stressed', 'Fearful', 'Nervous', 'Normal', 'Relaxed', 'Calm', 'Cool', 'Loving', 'Romantic', 'Passionate', 'Very Happy'],
     quote: [
         '"Success is not final, failure is not fatal: it is the COURAGE TO CONTINUE that counts".  - Winston Churchill',
@@ -31,7 +31,7 @@ const generateInspiration = () => {
     // use the object's properties to customize the message being added to dailyMessage 
     switch(property) {
       case 'spiritAnimal':
-        dailyMessage.push(`Your spirit animal today is a "${inspiration[property][index]}".`)
+        dailyMessage.push(`Your spirit animal today is a ${inspiration[property][index]}.`)
         break
       case 'mood':
         dailyMessage.push(`Your mood today is "${inspiration[property][index]}".`)
@@ -44,14 +44,14 @@ const generateInspiration = () => {
     }
     
     }
-    formatWisdom(dailyMessage);
+    document.querySelector('.inspiration').textContent = format(dailyMessage);
+    
 }
 
-function formatWisdom(wisdom) {
-    // Add some ASCII here?
-    // Add in more symbols to the array? like emojies or what not?
-    const formatted = dailyMessage.join('\n')
+function format(array) {
+    const formatted = array.join('\n')
     console.log(formatted)
+    return formatted;
   }
   
   generateInspiration();
