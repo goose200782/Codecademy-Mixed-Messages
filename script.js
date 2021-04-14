@@ -26,6 +26,32 @@ const dailyMessage = [];
 
 const generateInspiration = () => {
     for(let property in inspiration){
-        
+        let index = randomNum(inspiration[property].length)
+  
+    // use the object's properties to customize the message being added to dailyMessage 
+    switch(property) {
+      case 'spiritAnimal':
+        dailyMessage.push(`Your spirit animal today is a "${inspiration[property][index]}".`)
+        break
+      case 'mood':
+        dailyMessage.push(`Your mood today is "${inspiration[property][index]}".`)
+        break
+      case 'quote':
+        dailyMessage.push(`Inspirational quote: ${inspiration[property][index]}.`)
+        break
+      default:
+        dailyMessage.push('There is not enough info.')
     }
+    
+    }
+    formatWisdom(dailyMessage);
 }
+
+function formatWisdom(wisdom) {
+    // Add some ASCII here?
+    // Add in more symbols to the array? like emojies or what not?
+    const formatted = dailyMessage.join('\n')
+    console.log(formatted)
+  }
+  
+  generateInspiration();
