@@ -1,10 +1,10 @@
 const randomNum = num => {
     return Math.floor(Math.random() * num)
 }
- 
+
 const inspiration = {
     spiritAnimal: ['Dragon 🐉', 'Tiger 🐅 ', 'Horse 🐎', 'Dog 🐕', 'Rabbit 🐇', 'Monkey 🐒', 'Snake 🐍', 'Rat 🐀', 'Rooster 🐓', 'Pig 🐖', 'Goat 🐐'], 
-    mood: ['Stressed', 'Fearful', 'Nervous', 'Normal', 'Relaxed', 'Calm', 'Cool', 'Loving', 'Romantic', 'Passionate', 'Very Happy'],
+    mood: ['Stressed 😧', 'Fearful 😨', 'Nervous 😓', 'Normal 😐', 'Relaxed 😌', 'Cool 😎', 'Loving 🥰', 'Romantic 😘', 'Very Happy 😁'],
     quote: [
         '"Success is not final, failure is not fatal: it is the COURAGE TO CONTINUE that counts".  - Winston Churchill',
         '"What you get by achieving your goals is not as important as what you become by achieving your goals."  - Zig Ziglar',
