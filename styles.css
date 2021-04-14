@@ -13,12 +13,32 @@ h1 {
 
 }
 
-.inspiration {
+.spiritAnimal {
     font-family : "Red Hat Display" , Arial, Helvetica ;
     font-size : 46px;
     color : beige; 
     font-weight : 500;
     padding-top : 50px;
+    padding-left : 90px;
+    padding-right: 90px;
+}
+
+.mood {
+    font-family : "Red Hat Display" , Arial, Helvetica ;
+    font-size : 46px;
+    color : beige; 
+    font-weight : 500;
+    padding-top : 30px;
+    padding-left : 90px;
+    padding-right: 90px;
+}
+
+.quote {
+    font-family : "Red Hat Display" , Arial, Helvetica ;
+    font-size : 46px;
+    color : beige; 
+    font-weight : 500;
+    padding-top : 30px;
     padding-left : 90px;
     padding-right: 90px;
 }

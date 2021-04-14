@@ -22,7 +22,7 @@ const inspiration = {
 ]
 }
 
-const dailyMessage = [];
+const dailyMessage = {};
 
 const generateInspiration = () => {
     for(let property in inspiration){
@@ -31,27 +31,29 @@ const generateInspiration = () => {
     // use the object's properties to customize the message being added to dailyMessage 
     switch(property) {
       case 'spiritAnimal':
-        dailyMessage.push(`Your spirit animal today is a ${inspiration[property][index]}.`)
-        break
+        dailyMessage[property] = `Your spirit animal today is a ${inspiration[property][index]}.`;
+        break;
       case 'mood':
-        dailyMessage.push(`Your mood today is "${inspiration[property][index]}".`)
-        break
+        dailyMessage[property] = `Your mood today is "${inspiration[property][index]}".`;
+        break;
       case 'quote':
-        dailyMessage.push(`Inspirational quote: ${inspiration[property][index]}.`)
-        break
+        dailyMessage[property] = `Inspirational quote: ${inspiration[property][index]}.`;
+        break;
       default:
-        dailyMessage.push('There is not enough info.')
+        dailyMessage = {error: "no info"};
     }
     
     }
-    document.querySelector('.inspiration').textContent = format(dailyMessage);
+    format();
     
 }
 
-function format(array) {
-    const formatted = array.join('\n')
-    console.log(formatted)
-    return formatted;
+function format() {
+    for(let property in dailyMessage){
+        document.querySelector(`.${property}`).textContent = dailyMessage[property];
+    }
+    // document.querySelector('.spiritAnimal').textContent = dailyMessage.spiritAnimal;
+    // document.querySelector('.spiritAnimal').textContent = dailyMessage.spiritAnimal;
   }
   
   generateInspiration();
