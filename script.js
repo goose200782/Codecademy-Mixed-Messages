@@ -3,7 +3,7 @@ const randomNum = num => {
 }
 
 const inspiration = {
-    spiritAnimal: ['Dragon 🐉', 'Tiger 🐅 ', 'Horse 🐎', 'Dog 🐕', 'Rabbit 🐇', 'Monkey 🐒', 'Snake 🐍', 'Rat 🐀', 'Rooster 🐓', 'Pig 🐖', 'Goat 🐐'], 
+    spiritAnimal: ['Dragon 🐉', 'Tiger 🐅 ', 'Horse 🐎', 'Dog 🐕', 'Rabbit 🐇', 'Monkey 🐒', 'Snake 🐍', 'Rat 🐀', 'Rooster 🐓', 'Pig 🐖', 'Goat 🐐', 'Frog 🐸'], 
     mood: ['Stressed 😧', 'Fearful 😨', 'Nervous 😓', 'Normal 😐', 'Relaxed 😌', 'Cool 😎', 'Loving 🥰', 'Romantic 😘', 'Very Happy 😁'],
     quote: [
         '"Success is not final, failure is not fatal: it is the COURAGE TO CONTINUE that counts".  - Winston Churchill',
